@@ -13,12 +13,11 @@ for unit_radian, unit_degree in radians_degrees:
     print(f'{unit_radian} to {unit_degree}')
 
 conversion = input('Type yes here -->')
-conversion_index = str(conversion)
+# conversion_index = float(conversion)
 
-unit_radian, unit_degree = radians_degrees[conversion_index]
+# unit_radian, unit_degree = radians_degrees[conversion_index]
 print()
 from_value = float(input(f' Enter {unit_radian} here -->'))
-print()
 
-if radians_degrees == 1:
-    
+degrees = from_value*180/math.pi
+print(f'The number {unit_radian} to {unit_degree} is {degrees}')
